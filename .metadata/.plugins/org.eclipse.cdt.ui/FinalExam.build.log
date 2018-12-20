@@ -1,0 +1,55 @@
+20:05:57 **** Incremental Build of configuration Debug for project FinalExam ****
+make all 
+Building file: ../src/AbstractEmployee.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AbstractEmployee.d" -MT"src/AbstractEmployee.o" -o "src/AbstractEmployee.o" "../src/AbstractEmployee.cpp"
+Finished building: ../src/AbstractEmployee.cpp
+ 
+Building file: ../src/AbstractEmployeeFactory.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AbstractEmployeeFactory.d" -MT"src/AbstractEmployeeFactory.o" -o "src/AbstractEmployeeFactory.o" "../src/AbstractEmployeeFactory.cpp"
+Finished building: ../src/AbstractEmployeeFactory.cpp
+ 
+Building file: ../src/AbstractPersonAPI.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AbstractPersonAPI.d" -MT"src/AbstractPersonAPI.o" -o "src/AbstractPersonAPI.o" "../src/AbstractPersonAPI.cpp"
+Finished building: ../src/AbstractPersonAPI.cpp
+ 
+Building file: ../src/AbstractSchool.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AbstractSchool.d" -MT"src/AbstractSchool.o" -o "src/AbstractSchool.o" "../src/AbstractSchool.cpp"
+In file included from ../src/AbstractSchool.cpp:8:0:
+../src/AbstractSchool.h:22:17: error: 'shared_ptr' does not name a type; did you mean 'char16_t'?
+                 shared_ptr<Employee> SharedPtrEmployee_t;
+                 ^~~~~~~~~~
+                 char16_t
+../src/AbstractSchool.h:23:17: error: 'shared_ptr' does not name a type; did you mean 'char16_t'?
+                 shared_ptr<Employee> CompareSharedPtrEmployeeFunction_t;
+                 ^~~~~~~~~~
+                 char16_t
+../src/AbstractSchool.h:24:17: error: 'shared_ptr' does not name a type; did you mean 'char16_t'?
+                 shared_ptr<Employee> ScaleSharedPtrEmployeeFunction_t;
+                 ^~~~~~~~~~
+                 char16_t
+../src/AbstractSchool.h:28:42: error: 'shared_ptr' has not been declared
+                 virtual void addEmployee(shared_ptr<Employee> employeeSharedPtr) = 0;
+                                          ^~~~~~~~~~
+../src/AbstractSchool.h:28:52: error: expected ',' or '...' before '<' token
+                 virtual void addEmployee(shared_ptr<Employee> employeeSharedPtr) = 0;
+                                                    ^
+../src/AbstractSchool.h:30:44: error: 'shared_ptr' has not been declared
+                 virtual void sortEmployees(shared_ptr<Employee> f) = 0;
+                                            ^~~~~~~~~~
+../src/AbstractSchool.h:30:54: error: expected ',' or '...' before '<' token
+                 virtual void sortEmployees(shared_ptr<Employee> f) = 0;
+                                                      ^
+../src/AbstractSchool.h:31:45: error: 'shared_ptr' has not been declared
+                 virtual void scaleEmployees(shared_ptr<Employee> f) = 0;
+                                             ^~~~~~~~~~
+../src/AbstractSchool.h:31:55: error: expected ',' or '...' before '<' token
+                 virtual void scaleEmployees(shared_ptr<Employee> f) = 0;
+                                                       ^
+make: *** [src/subdir.mk:53: src/AbstractSchool.o] Error 1
+
+20:06:18 Build Failed. 10 errors, 0 warnings. (took 21s.152ms)
+

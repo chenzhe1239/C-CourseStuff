@@ -1,0 +1,12 @@
+
+#include <iostream>
+#include "Employee.h"
+using namespace std;
+
+int main() {
+	Employee *dan = new Employee;
+	dan->setWage(28.00);
+	double b = dan->getWage();
+	cout << &b << endl;
+	return 0;
+}

@@ -1,0 +1,20 @@
+//
+// Created by chenz on 12/11/2018.
+//
+
+#ifndef FINALS_EMPLOYEE_H
+#define FINALS_EMPLOYEE_H
+
+
+
+class Employee {
+private:
+    double wage;
+public:
+    double getWage();
+
+    void setWage(double wage);
+};
+
+
+#endif //FINALS_EMPLOYEE_H
